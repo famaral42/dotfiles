@@ -1,0 +1,19 @@
+# Temporarios
+*~
+*.temp
+*.tmp
+
+# Hidden
+.*
+!/.gitignore
+
+# Compiled
+*.dll
+*.exe
+*.o
+
+# SO
+.DS_Store
+.DS_Store?
+.[Tt]rashes
+*humbs.db
