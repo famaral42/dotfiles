@@ -6,7 +6,7 @@ function parse_git_branch() {
 	if [ ! "${BRANCH}" == "" ]
 	then
 		STAT=`parse_git_dirty`
-		echo -e "${ccPurple}[${BRANCH}${ccRed}${STAT}${ccPurple}]"
+		echo -e "${ccPurple}[${BRANCH}${cfRed3}${STAT}${ccPurple}]"
 	else
 		echo ""
 	fi
