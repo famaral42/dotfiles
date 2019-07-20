@@ -5,12 +5,16 @@ function parse_git_branch() {
 	BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
 	if [ ! "${BRANCH}" == "" ]
 	then
-		STAT=${ccRed}${cBold}`parse_git_dirty`${cReset}
-		PSgit="${ccPurple}${cBold}["
+		STAT=`parse_git_dirty`
+		PSgit=""
+		PSgit+="${ccPurple}["
 		PSgit+="${BRANCH}"
+		PSgit+="${ccRed}"
 		PSgit+="${STAT}"
-		PSgit+="${ccPurple}${cBold}]"
-		echo ${PSgit}
+		PSgit+="${ccPurple}]"
+		echo -e "${PSgit}"
+
+		#echo -${BRANCH}${STAT}
 	else
 		echo ""
 	fi

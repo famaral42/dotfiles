@@ -22,12 +22,11 @@ srcBash bash_git.sh
 
 PS1=""
 PS1+="${ccYellow}\u"
-PS1+="${ccWhite}@"
+PS1+="${ccWhite}${cBold}@${cReset}"
 PS1+="${ccGreen}\h"
-PS1+="${ccWhite}:"
-PS1+="${ccBlue}\W"
-PS1+="`parse_git_branch`"
-PS1+="${ccWhite}\$"
-PS1+="${cReset} "
+PS1+="${ccWhite}${cBold}:${cReset}"
+PS1+="${ccBlue}\W${cReset}"
+PS1+="\`parse_git_branch\`"
+PS1+="${ccWhite}${cBold}> ${cReset}"
 
 export PS1
