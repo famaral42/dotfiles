@@ -27,7 +27,7 @@ PS1+="${ccGreen}\h"
 PS1+="${ccWhite}:"
 PS1+="${ccBlue}\W"
 PS1+="`parse_git_branch`"
-PS1+="${ccWhite}~\$"
+PS1+="${ccWhite}\$"
 PS1+="${cReset} "
 
 export PS1
