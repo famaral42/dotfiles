@@ -1,6 +1,3 @@
-
-
-
 # https://www.gnu.org/software/bash/manual/html_node/The-Shopt-Builtin.html
 
 # If set, the history list is appended to the file named by the value of the

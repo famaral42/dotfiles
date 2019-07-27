@@ -23,26 +23,13 @@ function extract () {
     fi
 }
 
-# JUPYTER NOTEBOOK no diretorio atual e opcao de LIMTE
-function jj {
-    dir=$(pwd)
-    if [ $# -eq 0 ]; then 
-        jupyter-notebook --notebook-dir=${dir}
-    else
-        max="--NotebookApp.iopub_data_rate_limit=10000000000"
-        jupyter-notebook --notebook-dir=${dir} ${max}
-    fi
-}
-
-
-
 
 function marca() {
 	sed "s/$1/\x1b[41m&\x1b[0m/g"
 }
 
 
-# Simple compile and run C++
+# Simple compile 1file and run C++
 function roda() {
 
 	exe=${1}.EXE

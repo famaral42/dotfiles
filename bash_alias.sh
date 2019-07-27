@@ -15,8 +15,6 @@ alias bh='cat ~/.bash_history | grep'
 alias top20d='du -m | sort -nr | head -n 20'
 alias top20f='du -a | sort -nr | head -n 20'
 
-alias limpaaa='rm -rf *;rm -rf .*;clear'
-
 alias pyea='conda activate'
 alias pyed='conda deactivate'
 alias pyel='conda env list'

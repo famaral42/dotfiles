@@ -1,16 +1,16 @@
 #eval $(dircolors -b ~/.dir_colors)
 
-cReset='\e[m'
-cBold='\e[1m'
+cReset="\[\e[m\]"
+cBold="\[\e[1m\]"
 
 # 16 COLORS Bold
-ccRed='\e[31;1m'
-ccGreen='\e[32;1m'
-ccYellow='\e[33;1m'
-ccBlue='\e[34;1m'
-ccPurple='\e[35;1m'
-ccCyan='\e[36;1m'
-ccWhite='\e[37;1m'
+ccRed="\[\e[31;1m\]"
+ccGreen="\[\e[32;1m\]"
+ccYellow="\[\e[33;1m\]"
+ccBlue="\[\e[34;1m\]"
+ccPurple="\[\e[35;1m\]"
+ccCyan="\[\e[36;1m\]"
+ccWhite="\[\e[37;1m\]"
 
 
 # https://jonasjacek.github.io/colors/
