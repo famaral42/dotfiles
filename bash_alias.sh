@@ -21,11 +21,12 @@ alias pyel='conda env list'
 
 
 # RSYNC
-# --partial       : Keep partially transferred files
-# --progress      : Show progress during transfer
-# -P              : Equivalent to --partial --progress
-# -r, --recursive : recurse into directories
-# -u, --update    : update only (don't overwrite newer files)
-# -t, --times     : Preserve times
-alias copia='rsync -Prut -n'
+# --partial         : Keep partially transferred files
+# --progress        : Show progress during transfer
+# -P                : Equivalent to --partial --progress
+# -r, --recursive   : Recurse into directories
+# -u, --update      : Update only (don't overwrite newer files)
+# -t, --times       : Preserve times
+# --exclude=PATTERN : Exclude files matching PATTERN
+alias copia='rsync -Prut --exclude={.*,*~}'
 
