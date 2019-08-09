@@ -27,5 +27,5 @@ alias pyel='conda env list'
 # -r, --recursive : recurse into directories
 # -u, --update    : update only (don't overwrite newer files)
 # -t, --times     : Preserve times
-alias copia='rsync -Prut'
+alias copia='rsync -Prut -n'
 
