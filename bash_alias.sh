@@ -19,6 +19,7 @@ alias pyea='conda activate'
 alias pyed='conda deactivate'
 alias pyel='conda env list'
 
+alias jn='jupyter-notebook'
 
 # RSYNC
 # --partial         : Keep partially transferred files
