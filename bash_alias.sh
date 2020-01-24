@@ -22,6 +22,8 @@ alias pyel='conda env list'
 
 alias jn='jupyter-notebook'
 
+alias rmbashistory='cat /dev/null > ~/.bash_history && history -c && exit'
+
 # RSYNC
 # --partial            : Keep partially transferred files
 # --progress           : Show progress during transfer
