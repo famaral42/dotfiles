@@ -60,8 +60,6 @@ function arq(){
 
 # Git init and create files on master and two branches
 function gitmodel(){
-    rm -rf *
-    rm -rf .*
     git init
     arq 01_1m
     git branch ramo_a
