@@ -43,7 +43,7 @@ PS1+="${ccBlue}\w${cReset}" 			# WORKING DIRECTORY
 #PS1+="${ccWhite}${cBold} - ${cReset}" 	# -
 #PS1+="${ccPurple}\`ps1_git_branch\`" 	# GIT BRANCH
 #PS1+="${ccRed}\`ps1_git_status\`" 		# GIT STATUS
-PS1+="\`parse_git_branch\`" 			# GIT BRANCH STATUS
+PS1+=`parse_git_branch` 			# GIT BRANCH STATUS
 PS1+="${ccWhite}${cBold}\$ ${cReset}"	# $
 
 
