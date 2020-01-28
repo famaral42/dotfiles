@@ -12,6 +12,7 @@ ccPurple="\[\e[35;1m\]"
 ccCyan="\[\e[36;1m\]"
 ccWhite="\[\e[37;1m\]"
 
+ccWB=${ccWhite}${ccWB}
 
 # https://jonasjacek.github.io/colors/
 
