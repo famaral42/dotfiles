@@ -22,6 +22,8 @@ alias pyel='conda env list'
 
 alias jn='jupyter-notebook'
 
+alias soo='source ~/.bashrc'
+
 alias rmbashistory='cat /dev/null > ~/.bash_history && history -c && exit'
 
 # RSYNC
