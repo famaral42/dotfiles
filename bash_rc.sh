@@ -1,7 +1,7 @@
 
 
 # Teclado Brasileiro ABTN2
-setxkbmap -model abnt2 -layout br
+#setxkbmap -model abnt2 -layout br
 
 
 function srcBash(){
