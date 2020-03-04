@@ -7,9 +7,21 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
-alias lt='ls -hlrt --color=always'
-alias ll='ls -hl --color=always'
-alias l='ls -hl --color=always'
+
+# LS  list directory contents
+# -a  do not ignore entries starting with
+# -F  append indicator (one of */=>@|) to entries
+# -h  with -l, print sizes in human readable format (e.g., 1K 234M 2G)
+# -o  like -l, but do not list group information
+# -r  reverse order while sorting
+# -R  list subdirectories recursively
+# -t  sort by modification time, newest first
+# -X  sort alphabetically by entry extension
+alias l='ls -ohXF --color=always'
+alias ll='ls -lhXF --color=always'
+alias lt='ll -rt --time-style=+"%Y-%m-%d--%H:%M:%S"'
+
+
 
 alias bh='cat ~/.bash_history | grep' 
 
