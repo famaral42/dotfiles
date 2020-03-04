@@ -7,9 +7,9 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
-alias lt='ls -hort --color=always'
-alias ll='ls -ho --color=always'
-alias l='ls -ho --color=always'
+alias lt='ls -hlrt --color=always'
+alias ll='ls -hl --color=always'
+alias l='ls -hl --color=always'
 
 alias bh='cat ~/.bash_history | grep' 
 
