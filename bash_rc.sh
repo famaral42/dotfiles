@@ -15,6 +15,7 @@ function srcBash(){
 }
 
 
+srcBash less_termcap.sh
 srcBash bash_profile.sh
 srcBash bash_colors.sh
 srcBash bash_alias.sh
