@@ -18,7 +18,7 @@ alias egrep='egrep --color=auto'
 # -t  sort by modification time, newest first
 # -X  sort alphabetically by entry extension
 alias l='ls -ohXF --color=always'
-alias ll='ls -lhXF --color=always'
+alias ll='ls -lhF --color=always'
 alias lt='ll -rt --time-style=+"%Y-%m-%d--%H:%M:%S"'
 
 
