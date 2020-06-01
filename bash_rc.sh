@@ -4,9 +4,15 @@
 #setxkbmap -model abnt2 -layout br
 
 
+# bash_rc.sh full path script
+_SCRIPT="$(readlink -f ${BASH_SOURCE[0]})"
+
+# dotfiles folder
+_SCRIPT_DIR="$(dirname $_SCRIPT)" 
+
+
 function srcBash(){
-	a="$HOME/dotfiles/" # dotfiles FOLDER
-	a=$a$1
+	a="${_SCRIPT_DIR}/$1"
 	if [ -e "$a" ]; then
 		source $a
 	else
