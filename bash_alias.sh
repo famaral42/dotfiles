@@ -36,6 +36,8 @@ alias jn='jupyter-notebook'
 
 alias soo='source ~/.bashrc'
 
+alias mklixo-py="echo '#!/usr/bin/env  python3' > lixo.py;chmod +x lixo.py"
+
 alias rmbashistory='cat /dev/null > ~/.bash_history && history -c && exit'
 
 # RSYNC
