@@ -25,8 +25,9 @@ alias lt='ll -rt --time-style=+"%Y-%m-%d--%H:%M:%S"'
 
 alias bh='cat ~/.bash_history | grep' 
 
-alias top20d='du -m | sort -nr | head -n 20'
-alias top20f='du -a | sort -nr | head -n 20'
+alias topsizea='du -sh *  | sort -h'
+alias topsized='du -sh */ | sort -h'
+alias topsizet='du -sh * -t 10M | sort -h'
 
 alias pyea='conda activate'
 alias pyed='conda deactivate'
