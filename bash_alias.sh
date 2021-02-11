@@ -29,10 +29,6 @@ alias topsizea='du -sh *  | sort -h'
 alias topsized='du -sh */ | sort -h'
 alias topsizet='du -sh * -t 10M | sort -h'
 
-alias pyea='conda activate'
-alias pyed='conda deactivate'
-alias pyel='conda env list'
-
 alias jn='jupyter-notebook'
 
 alias soo='source ~/.bashrc'
