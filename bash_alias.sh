@@ -33,7 +33,8 @@ alias jn='jupyter-notebook'
 
 alias soo='source ~/.bashrc'
 
-alias mklixo-py="echo '#!/usr/bin/env  python3' > lixo.py;chmod +x lixo.py"
+alias mklixo-py="echo '#!/usr/bin/env python' > lixo.py;chmod +x lixo.py"
+alias mklixo-sh="echo '#!/usr/bin/env   bash' > lixo.sh;chmod +x lixo.sh"
 
 alias rmbashistory='cat /dev/null > ~/.bash_history && history -c && exit'
 
