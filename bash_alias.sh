@@ -27,7 +27,7 @@ alias bh='cat ~/.bash_history | grep'
 
 alias topsizea='du -sh *  | sort -h'
 alias topsized='du -sh */ | sort -h'
-alias topsizet='du -sh * -t 10M | sort -h'
+alias topsizet='du -sh * .[!.]* -t 10M | sort -h'
 
 alias jn='jupyter-notebook'
 
