@@ -52,3 +52,5 @@ PS1+="${ccWB}\$ ${cReset}"	# $
 
 
 export PS1
+
+export HISTCONTROL=ignoredups
