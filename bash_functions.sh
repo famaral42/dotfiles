@@ -24,6 +24,14 @@ function extract () {
 }
 
 
+########################################################################
+# CD on Exit  for  fff (Fucking Fast File-Manager)
+fff() {
+    f3m "$@"
+    cd "$(cat "${XDG_CACHE_HOME:=${HOME}/.cache}/fff/.fff_d")"
+}
+
+
 function marca() {
 	sed "s/$1/\x1b[41m&\x1b[0m/g"
 }
