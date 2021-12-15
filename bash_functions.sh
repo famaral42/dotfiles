@@ -54,3 +54,20 @@ function roda() {
 
 	rm ${exe}
 }
+
+
+function ping_one_ip()
+{
+  ping -b -c 1 $1 > /dev/null
+  [ $? -eq 0 ] && echo IP: $i is up
+}
+
+function ping_all_ip()
+{
+    local base=${1:-192.168.0}
+
+    for i in ${base}.{1..254} 
+    do
+        ping_one_ip $i & disown
+    done
+}
