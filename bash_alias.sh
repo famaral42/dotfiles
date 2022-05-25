@@ -22,6 +22,12 @@ alias ll='ls -lhF --color=always'
 alias lt='ll -rt --time-style=+"%Y-%m-%d--%H:%M:%S"'
 
 
+# Find Duplicate Files
+# -w32                     check only the first 32 bytes, after that comes the file name
+# -d                       only print duplicate lines, one for each group
+# --all-repeated=separate  print all duplicate lines groups delimited with newline
+alias findupfiles='find . ! -empty -type f -exec md5sum {} + | sort | uniq -w32 -dD --all-repeated=separate'
+
 
 alias bh='cat ~/.bash_history | grep' 
 
