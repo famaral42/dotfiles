@@ -40,15 +40,15 @@ function ps1_folder_size(){
 
 PS1=""
 PS1+="${ccYellow}\u" 					# USER
-PS1+="${ccWB}@${cReset}" 	# @
+PS1+="${ccWB}@${cReset}" 	            # @
 PS1+="${ccGreen}\h" 					# HOST
-PS1+="${ccWB}:${cReset}" 	# :
-PS1+="${ccBlue}\w" 			# WORKING DIRECTORY
+PS1+="${ccWB}:${cReset}" 	            # :
+PS1+="${ccBlue}\W" 			            # WORKING DIRECTORY
 #PS1+="${ccCyan}`ps1_n_files`" 			# NUMBER OF FILES
 #PS1+="${ccYellow} `ps1_folder_size`" 	# SIZE OF FILES
 PS1+="${ccPurple}\`parse_git_branch\`" 	# GIT BRANCH
 PS1+="${ccRed}\`parse_git_dirty\`" 		# GIT STATUS
-PS1+="${ccWB}\$ ${cReset}"	# $
+PS1+="${ccWB}\$ ${cReset}"	            # $
 
 
 export PS1
